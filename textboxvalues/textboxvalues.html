@@ -1,0 +1,46 @@
+<h1>Today I Learn How get TextBox Values In Angular</h1>
+<!-- <input type="text" #nameBox placeholder="Enter Your Name" name="myName" />
+<input type="button" value="Click" (click)="getName(nameBox.value)" />
+
+<h2>{{ displayName }}</h2>
+#nameBox this is template referance variable -->
+<!-- <input
+  type="text"
+  #nameBox
+  placeholder="Enter Your Name"
+  (keypress)="myName(nameBox.value)"
+  name="myNames"
+  id=""
+/>
+<h2>{{ getvalue }}</h2> -->
+
+<!-- <input type="text" #nameBox placeholder="Enter Your Name" name="myName" id="" />
+<input type="button" value="Submit" (click)="myName(nameBox.name)" />
+<h2>{{ getvalue }}</h2> -->
+
+<!-- <input
+  type="text"
+  #nameBox
+  placeholder="Please Enter Your Name"
+  name="myName"
+  id=""
+/>
+<input type="button" value="Submit" (click)="myName(nameBox)" value="Click" />
+<h2>{{ getValue }}</h2> -->
+<input
+  type="text"
+  #first
+  (keyup)="getNames(first.value, last.value)"
+  ;
+  placeholder="Enter First Name"
+/>
+<br />
+<input
+  type="text"
+  #last
+  (keyup)="getNames(last.value, first.value)"
+  placeholder="Enter Last Name"
+/>
+<br />
+
+<h2>{{ displayName }}</h2>

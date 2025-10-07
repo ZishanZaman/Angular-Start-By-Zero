@@ -1,0 +1,9 @@
+h1 {
+  color: cyan;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  color: forestgreen;
+  font-family: calc();
+}
