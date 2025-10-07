@@ -1,30 +1,38 @@
 <h1>Structure Directives in Angular</h1>
-<!-- // true accept kray ga ya phr false -->
-<!-- <h1 *ngIf="display; else myName">I Have Trying to Learn Angular</h1>
-<ng-template #myName>
-  <h1>Muhammad Adil</h1>
-</ng-template> -->
-<!-- <h1 *ngIf="display; else myName">Learning Never Ends</h1>
+<!-- <h2>{{ fruits[0] }}</h2>
+<h2>{{ fruits[1] }}</h2>
+<h2>{{ fruits[2] }}</h2>
+<h2>{{ fruits[3] }}</h2>
+<h2>{{ fruits[4] }}</h2> -->
+<div *ngFor="let fruit of fruits; odd as o">
+  <h2>{{ o }} {{ fruit }}</h2>
+</div>
 
-<ng-template #myName>
-  <h1>My Leader Sir Muhammad Adil</h1>
-</ng-template> -->
-<!-- <div *ngIf="display; then ifPart; elsePart"></div>
+<div *ngFor="let p of sports; index as i">
+  <h2>{{ i }}</h2>
+  <h2>{{ p.name }}</h2>
+  <h2>{{ p.players }}</h2>
+  <h2>{{ p.age }}</h2>
+  <br />
+</div>
 
-<ng-template #ifPart>
-  <h1>My Father Name is Muhammad Zaman Khan Bal0ch</h1>
-</ng-template>
-<ng-template #elsePart>
-  <h1>Muhammad Adil is My Favourit Teacher In My Programming Life</h1>
-</ng-template> -->
-<div *ngIf="display === 'kumar'; then ifPart; else elsePart"></div>
-<h1 *ngIf="fruit === 'Apple'">Your Selected Furit is Apple</h1>
-<h1 *ngIf="fruit === 'Banana'">Your Selected Furit is Banana</h1>
-<h1 *ngIf="fruit === 'Mango'">Your Selected Furit is Mango</h1>
+<!-- <div *ngFor="let fruit of fruits; first as f">
+  <h2>{{ f }} {{ fruit }}</h2>
+</div> -->
 
-<ng-template #ifPart>
-  <h1>My Father Name is Muhammad Zaman Khan Bal0ch</h1>
-</ng-template>
-<ng-template #elsePart>
-  <h1>Muhammad Adil is My Favourit Teacher In My Programming Life</h1>
-</ng-template>
+<!-- <div *ngFor="let fruit of fruits; index as i">
+  <h2>{{ i }} {{ fruit }}</h2>
+</div> -->
+
+<!-- for lop -->
+
+<!-- @switch (Pizzaa){ @default { Please select a pizza } @case ('Fajita') { You Have
+Selected Fajita Pizza } @case ('kabab') { You have selected kabab Pizza } @case
+('Supreme') { You Have Selected Supreme Pizza } @case ('tika') { You have
+Selected Tika Pizza } @case ('Veggie') { You have selected Veggie Pizza } } -->
+
+<!-- @switch (pizza) { @default { Please select a pizza } @default { Please select a
+pizza kal ana } @case ('Fajita') { You Have Selected Fajita Pizza } @case
+('kabab') { You have selected kabab Pizza } @case ('Supreme') { You Have
+Selected Supreme Pizza } @case ('tika') { You have Selected Tika Pizza } @case
+('Fajita') { You have selected Veggie Pizza } } -->
