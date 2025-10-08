@@ -9,23 +9,44 @@ import { CommonModule } from "@angular/common";
 export class StaturcalDirc {
   public fruits = ["Banana", "Apple", "Mango", "Orange", "Grapes"];
 
-  public sports = [
+  public persons = [
     {
-      name: "Cricket",
-      players: 11,
-      age: 5,
+      name: "Kumar",
+      age: 24,
+      isMarried: true,
+      hobbies: ["Writing", "Reading", "Singing"],
     },
     {
-      name: "Football",
-      players: 11,
-      age: 3,
+      name: "Zain",
+      age: 26,
+      isMarried: false,
+      hobbies: ["Dancing", "Sleeping", "Singing"],
     },
     {
-      name: "Hockey",
-      players: 11,
-      age: 4,
+      name: "Arshad",
+      age: 21,
+      isMarried: true,
+      hobbies: ["Sports", "Songs", "Writing"],
     },
   ];
+
+  // public sports = [
+  //   {
+  //     name: "Cricket",
+  //     players: 11,
+  //     age: 5,
+  //   },
+  //   {
+  //     name: "Football",
+  //     players: 11,
+  //     age: 3,
+  //   },
+  //   {
+  //     name: "Hockey",
+  //     players: 11,
+  //     age: 4,
+  //   },
+  // ];
 
   // public Pizzaa = "Fajita";
   // // public display = 1000 > 150;
