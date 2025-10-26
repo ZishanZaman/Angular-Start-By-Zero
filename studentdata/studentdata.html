@@ -1,0 +1,14 @@
+<h1>This is use for store Student Data</h1>
+
+<table height="200" [width]="200">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Standard</th>
+  </tr>
+  <tr *ngFor="let std of students">
+    <td>{{ std.name }}</td>
+    <td>{{ std.age }}</td>
+    <td>{{ std.standard }}</td>
+  </tr>
+</table>

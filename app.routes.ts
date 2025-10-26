@@ -7,7 +7,15 @@ import { DataBinding } from "./data-binding/data-binding";
 import { StaturcalDirc } from "./staturcal-dirc/staturcal-dirc";
 import { Parentchilddata } from "./parentchilddata/parentchilddata";
 import { Child } from "./child/child";
+import { Childtoparent } from "./childtoparent/childtoparent";
+import { Pipesinangular } from "./pipesinangular/pipesinangular";
+import { CurrencyPipe } from "@angular/common";
+import { StudentList } from "./student-list/student-list";
 export const routes: Routes = [
+  { path: "studentlist", component: StudentList },
+  { path: "currencypipe", component: CurrencyPipe },
+  { path: "pipesinangular", component: Pipesinangular },
+  { path: "childtoparent", component: Childtoparent },
   { path: "child", component: Child },
   { path: "parentchilddata", component: Parentchilddata },
   { path: "staturcaldirc", component: StaturcalDirc },
